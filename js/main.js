@@ -4,7 +4,7 @@ var $beigeBox = $('.beige-box');
 $beigeBox.waypoint(function (direction) {
   if (direction == 'down') {
     $cherubs.addClass('js-cherubs-animate');
-    } else {
+  } else {
     $cherubs.removeClass('js-cherubs-animate');
   }
-}, { offset: '60%'});
+}, {offset: '60%'});

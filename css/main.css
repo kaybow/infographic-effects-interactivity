@@ -31,12 +31,25 @@ svg {
   height: 100%;
 }
 
-.pink-heart-l {
-
+.pink-heart-l, .pink-heart-r {
+ transform: scale(1);
+ transform-origin: center center;
 }
 
-.pink-heart-r{
+.pink-heart-l:hover, .pink-heart-r:hover {
+  animation: expand 5s ease forwards;
+}
 
+@ keyframes {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .cherubs {
