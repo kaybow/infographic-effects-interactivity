@@ -31,48 +31,67 @@ svg {
   height: 100%;
 }
 
-.pink-heart-l, .pink-heart-r {
+.pink-heart-l, .pink-heart-r, .aqua-orb-r, .aqua-orb-l {
  transform: scale(1);
  transform-origin: center center;
 }
 
-.pink-heart-l:hover, .pink-heart-r:hover {
+.pink-heart-l:hover, .pink-heart-r:hover, .aqua-orb-r:hover, .aqua-orb-l:hover {
   animation: expand 5s ease forwards;
 }
 
-@ keyframes {
+@keyframes expand {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.5);
+    transform: scale(1.25);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.5);
   }
 }
 
 .cherubs {
-  opacity: 0;
   transition: all 200ms ease-in;
 }
 
-.js-cherubs-animate {
+.cherub1, .cherub2 {
+  opacity: 0;
+}
+
+.cherub2 {
+  transform-origin: 60px 221px;
+}
+
+.cherub1 {
+  transform-origin: 609px 221px;
+}
+
+.js-cherubs-animate .cherub1 {
   opacity: 1;
-  animation: cherubs-rotate 250ms;
+  animation: cherubs-rotate 5s;
 }
 
 @keyframes cherubs-rotate {
   0% {
     transform: rotate(0);
   }
-  33% {
-    transform: rotate(150deg);
+  100% {
+    transform: rotate(-360deg);
   }
-  66%
-    transform: rotate(-15deg);
+}
+
+.js-cherubs-animate .cherub2 {
+  opacity: 1;
+  animation: cherubs-spin 5s;
+}
+
+@keyframes cherubs-spin {
+  0% {
+    transform: rotate(0);
   }
   100% {
-    transform: rotate(0);
+    transform: rotate(360deg);
   }
 }
