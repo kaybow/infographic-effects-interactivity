@@ -95,3 +95,11 @@ svg {
     transform: rotate(360deg);
   }
 }
+
+.move-heart {
+  transform:translateY(-45px);
+}
+
+.circle-grow {
+  transform:scale(1.1);
+}
