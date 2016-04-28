@@ -1,11 +1,11 @@
 html {
   box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  moz-text-size-adjust: 100%;
+  ms-text-size-adjust: 100%;
+  webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 *, *::before, *::after {
@@ -19,7 +19,7 @@ body {
 h1 {
   text-align: center;
   color: #fff;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 body {
@@ -32,8 +32,8 @@ svg {
 }
 
 .pink-heart-l, .pink-heart-r, .aqua-orb-r, .aqua-orb-l {
- transform: scale(1);
- transform-origin: center center;
+  transform: scale(1);
+  transform-origin: center center;
 }
 
 .pink-heart-l:hover, .pink-heart-r:hover, .aqua-orb-r:hover, .aqua-orb-l:hover {
@@ -41,12 +41,16 @@ svg {
 }
 
 @keyframes expand {
+
   0% {
     transform: scale(1);
   }
+
   50% {
+
     transform: scale(1.25);
   }
+
   100% {
     transform: scale(1.5);
   }
@@ -74,9 +78,11 @@ svg {
 }
 
 @keyframes cherubs-rotate {
+
   0% {
     transform: rotate(0);
   }
+
   100% {
     transform: rotate(-360deg);
   }
@@ -88,18 +94,30 @@ svg {
 }
 
 @keyframes cherubs-spin {
+
   0% {
+
     transform: rotate(0);
   }
+
   100% {
+
     transform: rotate(360deg);
   }
 }
 
-.move-heart {
-  transform:translateY(-45px);
+.red-heart {
+  transform:translate(0);
 }
 
-.circle-grow {
-  transform:scale(1.1);
+.move-heart {
+  transform:translateY(-70px);
+}
+
+.change-colour {
+  fill: pink;
+}
+
+.circle {
+  fill: yellow;
 }
