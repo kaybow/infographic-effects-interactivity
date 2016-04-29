@@ -3,13 +3,13 @@ $('.red-heart').on('click', function () {
 });
 
 $('.circle1').on('click', function () {
-  $('.circle1').addClass('change-colour');
+  $('.circle1').toggleClass('change-colour');
 });
 
 $('.circle2').on('click', function () {
-  $('.circle2').addClass('change-colour');
+  $('.circle2').toggleClass('change-colour');
 });
 
 $('.circle3').on('click', function () {
-  $('.circle3').addClass('change-colour');
+  $('.circle3').toggleClass('change-colour');
 });
