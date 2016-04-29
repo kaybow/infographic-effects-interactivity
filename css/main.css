@@ -2,8 +2,8 @@ html {
   box-sizing: border-box;
   moz-text-size-adjust: 100%;
   ms-text-size-adjust: 100%;
-  webkit-text-size-adjust: 100%;
-  webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
@@ -34,32 +34,32 @@ svg {
 }
 
 .pink-heart-l, .pink-heart-r, .aqua-orb-r, .aqua-orb-l {
-  webkit-transform: scale(1);
+  -webkit-transform: scale(1);
   transform: scale(1);
-  webkit-transform-origin: center center;
+  -webkit-transform-origin: center center;
   transform-origin: center center;
 }
 
 .pink-heart-l:hover, .pink-heart-r:hover, .aqua-orb-r:hover, .aqua-orb-l:hover {
-  webkit-animation: expand 5s ease forwards;
+  -webkit-animation: expand 5s ease forwards;
   animation: expand 5s ease forwards;
 }
 
 @-webkit-keyframes expand {
 
   0% {
-    webkit-transform: scale(1);
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 
   50% {
 
-    webkit-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
     transform: scale(1.25);
   }
 
   100% {
-    webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
 }
@@ -67,24 +67,24 @@ svg {
 @keyframes expand {
 
   0% {
-    webkit-transform: scale(1);
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 
   50% {
 
-    webkit-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
     transform: scale(1.25);
   }
 
   100% {
-    webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
 }
 
 .cherubs {
-  webkit-transition: all 200ms ease-in;
+  -webkit-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
 
@@ -93,30 +93,30 @@ svg {
 }
 
 .cherub2 {
-  webkit-transform-origin: 60px 221px;
+  -webkit-transform-origin: 60px 221px;
   transform-origin: 60px 221px;
 }
 
 .cherub1 {
-  webkit-transform-origin: 609px 221px;
+  -webkit-transform-origin: 609px 221px;
   transform-origin: 609px 221px;
 }
 
 .js-cherubs-animate .cherub1 {
   opacity: 1;
-  webkit-animation: cherubs-rotate 5s;
+  -webkit-animation: cherubs-rotate 5s;
   animation: cherubs-rotate 5s;
 }
 
 @-webkit-keyframes cherubs-rotate {
 
   0% {
-    webkit-transform: rotate(0);
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
 
   100% {
-    webkit-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
   }
 }
@@ -124,19 +124,19 @@ svg {
 @keyframes cherubs-rotate {
 
   0% {
-    webkit-transform: rotate(0);
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
 
   100% {
-    webkit-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
   }
 }
 
 .js-cherubs-animate .cherub2 {
   opacity: 1;
-  webkit-animation: cherubs-spin 5s;
+  -webkit-animation: cherubs-spin 5s;
   animation: cherubs-spin 5s;
 }
 
@@ -144,13 +144,13 @@ svg {
 
   0% {
 
-    webkit-transform: rotate(0);
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
 
   100% {
 
-    webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -159,24 +159,24 @@ svg {
 
   0% {
 
-    webkit-transform: rotate(0);
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
 
   100% {
 
-    webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 
 .red-heart {
-  webkit-transform:translate(0);
+  -webkit-transform:translate(0);
   transform:translate(0);
 }
 
 .move-heart {
-  webkit-transform:translateY(-70px);
+  -webkit-transform:translateY(-70px);
   transform:translateY(-70px);
 }
 
